@@ -44,3 +44,4 @@ html5lib>=1.1
 
 streamlit
 
+langchain-google-genai
