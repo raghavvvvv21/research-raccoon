@@ -5,9 +5,14 @@ from langchain.agents import create_agent
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tool import web_search,scrape_url
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 #model stepup
-llm=ChatMistralAI(model='mistral-small-2506',temperature=0)
+# llm=ChatMistralAI(model='mistral-small-2506',temperature=0)
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    temperature=0
+)
 
 #agent1
 def build_search_agent():
