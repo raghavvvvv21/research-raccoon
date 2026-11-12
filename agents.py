@@ -10,7 +10,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 #model stepup
 # llm=ChatMistralAI(model='mistral-small-2506',temperature=0)
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+    model="gemini-3.8-flash",
     temperature=0
 )
 
